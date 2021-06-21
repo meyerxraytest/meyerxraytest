@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>产品视频</title>
+
+<link rel="stylesheet" type="text/css" href="css/styleXX.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<div id="output">
+	  <div class="containerT">
+		<img src="images/logo.png">
+		<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+		  <h1>产品视频</h1>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:10px;">&nbsp;</p>
+			<p>包装类翻板剔除装置演示视频（964KB）</p>
+			<video id="media" width="300" height="200" controls="controls"> 
+            <source src="视频\皮带翻板剔除视频.mp4"/></video>
+	        <p>包装类摆臂剔除装置演示视频（663KB）</p>
+			<video id="media2" width="300" height="200" controls="controls"> 
+            <source src="视频\摆臂剔除（盒装）.mp4"/>
+	  </div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");   //登录背景函数
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==6){
+                $("#entry_btn").click();
+            }
+        });
+    });
+	function X1(){window.location.href="./0Software/MY13009_XGCJ_V1.01.zip";}
+	function X2(){window.location.href="./0Software/MY8060-80XS_ZDKZ_V1.00.zip";}
+	
+</script>
+</body>
+</html>

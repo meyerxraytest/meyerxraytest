@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>80XS机型产品信息</title>
+
+<link rel="stylesheet" type="text/css" href="css/styleXX.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<div id="output">
+	  <div class="containerT">
+		<img src="images/logo.png">
+		<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+		  <h1>80XS机型产品信息</h1>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:10px;">&nbsp;</p>
+			<img src="images/80XS.png" width="204" height="174" /><br>
+	  <a href = "javascript:void(0)" onclick = "document.getElementById('cont_i').style.display='block'">（1）标准振动器尺寸（点击查看）</a>
+	  <div id="cont_i" class="cont8">
+	  <img src="images/80XS振动器尺寸.PNG" />
+	  <a href = "javascript:void(0)" onclick = "document.getElementById('cont_i').style.display='none'">关闭窗口</a></div><br>
+	  
+	  <a href = "javascript:void(0)" onclick = "document.getElementById('cont_j').style.display='block'">（2）振动筛尺寸（点击查看）</a>
+	  <div id="cont_j" class="cont9">
+	  <img src="images/80XS振动筛尺寸.PNG" />
+	  <a href = "javascript:void(0)" onclick = "document.getElementById('cont_j').style.display='none'">关闭窗口</a></div>
+			<p>名称：大产量一体式多用途X射线检测机</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>检测灵敏度：不锈钢球(SUS ball)≥Φ0.3mm</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>喷阀数：80个</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>防护等级：IP54</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>整机重量: 700kg</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>皮带宽度: 620mm</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>人机界面：17寸液晶触摸屏</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>传送带速度：10-100m/min，可调</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>受检品尺寸：宽度≤588mm 高度≤35mm</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>外型尺寸: 2650mm×1442mm×2350mm±30</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+	        <p>设备特色: 在检测精度不降低的情况下<br>同比60XS产量提升30%左右</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+	        <p>射源: 自制射源寿命一般在8000～10000个小时</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+			<p>电源: 单相AC220V±10%， 50/60Hz，2.5kW</p>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:5px;">&nbsp;</p>
+	        <p>产量参考: <br>大米约8～10吨/小时，黄豆约6～7吨/小时<br>
+        花生约5～6吨/小时，南瓜籽约4吨/小时<br>
+        葵花籽约2.5～3吨/小时，巴旦木约1～1.5吨/小时</p>
+		    <p>核桃约1～1.5吨/小时，夏威夷果约1.2～1.7吨/小时<br>碧根果约在1.2～1.7吨/小时，PET瓶片1～1.5吨/小时</p>
+	  </div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");   //登录背景函数
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==6){
+                $("#entry_btn").click();
+            }
+        });
+    });
+	function X1(){window.location.href="./0Software/MY13009_XGCJ_V1.01.zip";}
+	function X2(){window.location.href="./0Software/MY8060-80XS_ZDKZ_V1.00.zip";}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>XM包装机型</title>
+
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<div id="output">
+		<div class="containerT">
+		<img src="images/logo.png">
+		<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+			<h1>XM包装机型</h1>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+			<form class="form" id="entry_form">
+				<input type="button"onClick="X1()"value="MY8045-XM_Pack_V1.02.zip"/>
+				<p>说明：
+1、1.02版XM包装系统底板与1.01不再兼容，<br>软件因此不兼容；
+2、此版本识别算法优化，识别能力加强；<br>
+3、使用该版本软件，系统底板需要升级；<br>老板子使用该软件会提示系统板通信失败。</p>
+				<input type="button"onClick="X2()"value="MY8045-XM_Pack_V1.01beta1015.zip"/>
+				<p>说明：
+傻瓜式安装，设置开始菜单自启动，新建桌面快捷键；<br>缺陷框图；扩大图区并可全屏；启动通信失败时自动尝试<br>连接3次；增加远程协助功能等。</p>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");   //登录背景函数
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==6){
+                $("#entry_btn").click();
+            }
+        });
+    });
+	function X1(){window.location.href="./0Software/MY8045-XM_Pack_V1.02.zip";}
+	function X2(){window.location.href="./0Software/MY8045-XM_Pack_V1.01beta1015.zip";}
+</script>
+</body>
+</html>

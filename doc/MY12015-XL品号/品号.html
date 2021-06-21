@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<title>品号查询</title>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/front-endPage.js"></script>
+<script type="text/javascript" src="js/shujv2.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/table.css">
+
+</head>
+<body>
+
+<div id="histroyBox"></div>
+<script type="text/javascript">
+    $('#histroyBox').CJJTable({
+       'title':["序号","物料品号","名称","所属机型","备注"],
+       'body':["taskCode","startAddr","endAddr","varietiesTypeName","createDate"],
+       'display':[1,1,1,1,1,2],
+       'pageNUmber':100,
+       'pageLength':data.length,
+       'url':data,
+       dbTrclick:function(e){
+        alert(e.find('.taskCode').html())
+       }
+    });
+</script>
+</body>
+</html>

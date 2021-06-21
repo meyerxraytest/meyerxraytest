@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>各机型FAQ分类</title>
+
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<div id="output">
+		<div class="containerT">
+		<img src="images/logo.png">
+		<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+			<h1>各机型FAQ分类</h1>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+			<form class="form" id="entry_form">
+				<input type="button"onClick="X1()"value="MY8045-60XS FAQ（建设中）"/>
+				<input type="button"onClick="X2()"value="MY8045-60XS2 FAQ（建设中）"/>
+				<input type="button"onClick="X3()"value="MY8060-80XS FAQ（建设中）"/>
+				<input type="button"onClick="X4()"value="MY8060-80XS2 FAQ（建设中）"/>
+				<input type="button"onClick="X5()"value="MY8045-XM FAQ（建设中）"/>
+				<input type="button"onClick="X6()"value="MY8045-XM2 FAQ（建设中）"/>
+				<input type="button"onClick="X7()"value="4022漏油包装设备 FAQ（建设中）"/>
+				<input type="button"onClick="X8()"value="立式包装机、大包装设备 FAQ（建设中）"/>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");   //登录背景函数
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==6){
+                $("#entry_btn").click();
+            }
+        });
+    });
+	function X1(){window.location.href="./MY8045-60XS故障.html";}
+	function X2(){window.location.href="./MY8045-60XS2故障.html";}
+	function X3(){window.location.href="./MY8060-80XS故障.html";}
+	function X4(){window.location.href="./MY8060-80XS2故障.html";}
+	function X5(){window.location.href="./MY8045-XM故障.html";}
+	function X6(){window.location.href="./MY8045-XM2故障.html";}
+	function X7(){window.location.href="./4022漏油包装设备故障.html";}
+	function X8(){window.location.href="./立式包装机大包装设备故障.html";}
+</script>
+</body>
+</html>

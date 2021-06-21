@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>工控机软件驱动安装步骤</title>
+<style type="text/css">
+body
+{
+   background-color: #222222;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a:visited
+{
+   color: #FFFFFF;
+}
+a:active
+{
+   color: #E6002D;
+}
+a:hover
+{
+	color: #FFFFFF;
+	font-family: "楷体";
+	font-size: 24px;
+	text-decoration: none;
+	border: 0px #000000 solid;
+	background-color: #666666;
+}
+</style>
+<style type="text/css">
+#Line1
+{
+   color: #036EB8;
+   background-color: #036EB8;
+   border-width: 0;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#wb_CssMenu1
+{
+   border: 0px #C0C0C0 solid;
+   background-color: transparent;
+}
+#wb_CssMenu1 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu1 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+   width: 100px;
+}
+#wb_CssMenu1 a
+{
+   display: block;
+   float: left;
+   color: #666666;
+   border: 1px #C0C0C0 solid;
+   background-color: #EEEEEE;
+   background-image: none;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   width: 88px;
+   height: 26px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 26px;
+   text-align: center;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover
+{
+   color: #666666;
+   background-color: #C0C0C0;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+}
+#wb_CssMenu1 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu1 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu1 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px solid #000000;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#Image4
+{
+   border: 0px #000000 solid;
+}
+.STYLE2 {
+	font-family: '楷体';
+	font-size: 24px;
+	color: #000000;
+}
+</style>
+</head>
+<body>
+<div class="STYLE2" id="wb_Text9" style="position:absolute;left:218px;top:32px;width:499px;height:39px;z-index:10;text-align:center;"><span style="color:#FFFFFF;font-family:'楷体';font-size:36px;">工控机软件驱动安装步骤</span></div>
+<div id="wb_Text3" style="position:absolute;left:11px;top:108px;width:923px;height:1219px;z-index:5;text-align:left;">
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第一步：配置Kepserver（用于工控机与PLC的连接）</strong></p>
+ <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（1）打开Kepserver进入界面如下：点击选择“连接性”，右键“新建通道”，随后在下拉选项中选择“Allen-Bradley Micro800 Ethenet”点击下一步。 </p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/1.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/2.PNG" width="610" height="448"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（2）在“添加通道向导”界面上，通道名称需填写“PLC”；下一步默认设置，无需更改。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/3.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/4.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（3）到选择网络配置时，在下拉框中选择连接PLC控制器的网口，其网卡的IP地址为“192.168.102.200/255.255.255.0”，确认后下一步默认，直至完成通道建立。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/5.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/6.PNG"></p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（4）通道建立完成后，“单击添加设备”对象名称应为该机型名称，例XS、XM等</p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/7.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/8.PNG"></p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（5）下一步指定PLC的ID，即IP地址为：192.168.102.100，后续默认设置无需更改，直至添加设备完成</p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/9.PNG"></p>
+	  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/OPC/10.PNG"></p>
+	  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">以上设置完成后，工控机和PLC已经建立连接，此时重新测试软件OPC是否能连接成功</p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第二步：上位机软件安装</strong></p>
+  	  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">默认程序路劲为D：\Meyerxraysystem，相关驱动和工具在该目录下Driver&amp;Tools中</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+    <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第三步：输入法安装</strong></p>
+  	  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">默认无需安装，系统已经配置</p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+    <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第四步：触摸屏驱动安装</strong></p>
+  	  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">寻找驱动路径：D:\MeyerXraySystem，相关驱动在该目录下Driver&amp;Tools中。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>1、触摸屏驱动安装：</strong></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">在Driver&Tools目录中文件eGalaxTouch_5.11.0.9126内点击setup.exe运行安装。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">运行安装程序后，一直点击Next，当出现如下界面时取消勾选“InstaLLRS232 interface driver”，不安装RS232驱动，继续一路点击Next；并等待程序安装USB驱动。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图33.PNG" width="473" height="328"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图34.PNG" width="423" height="142"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">研华触摸屏的USB驱动安装完成后，会弹出对话框，点击“是”立即进行四点校正。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">安装屏幕提示，用手指点触红色靶标，进行屏幕四点校正。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图35.PNG" width="267" height="213"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">以上完成后，双击系统托盘eGalaxTouch的图标，打开触摸屏设置，取消“从系统喇叭发声”，否则在开启声音的情况下会导致死屏（重要）。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图36.PNG" width="382" height="469"></p>
+    <p style="color:#EEB13B;font-family:'楷体';font-size:24px;">&nbsp;</p>
+    <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第五步：采集卡驱动安装（选装EPIX)</strong></p>
+	<p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">点击“我的电脑”点击“管理”，在弹出对话框中点击左侧“设备管理”，随后在右侧找个“其他设备”-“多媒体视频控制器”，该未知设备就是采集卡。点击“更新驱动程序软件”。</p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图37.PNG" width="695" height="538"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">随后选择“浏览计算机以驱动程序软件”。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">搜索路径定位到“D：\MeyerXRaySystem\Driver&amp;Tools\EPIX_V3.8_Driver\Win7”。</p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图38.PNG" width="695" height="538"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">其次点击“设置”进入“系统设置”界面，选择“图像保存方式”和“报警设置”如下图</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图39.PNG" width="695" height="538"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">“始终信任来自EPIX，Inc的软件”，点击“安装”。完成后即可在设备管理器中找到采集卡。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图40.PNG" width="582" height="538"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/图41.PNG" width="583" height="233"></p>
+  <p style="color:#000000;font-family:'楷体';font-size:24px;">&nbsp;</p>
+   <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第五步：采集卡驱动安装（选装Dalsa)</strong></p>
+    <p style="color:#EEB13B;font-family:'楷体';font-size:35px;"><strong>一、32位操作系统解决方法</strong></p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第一步先分别安装下图两个文件夹里的exe。</strong></p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡1.PNG" width="484" height="142"></p>
+	<p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">在哪里下载？（https://meyerxray.github.io/）请进入X光产品线技术支持网站软件驱动中可以直接下载。</p>
+	<p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+<p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第二步关闭下图中的服务。</strong></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡2.PNG" width="439" height="261"></p>
+	<p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+<p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>第三步更新插件。</strong></p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡3.PNG" width="298" height="348"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>（1）点击“开始”—“所有程序”，找到并打开“Fireware update</strong></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡4.PNG" width="530" height="219"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>（2）点击“Manual”</strong></p>
+   <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡5.PNG" width="450" height="411"></p>
+   <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>（3）点击“tart update”</strong></p>
+     <p style="color:#EEB13B;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:35px;"><strong>二、64位操作系统解决方法</strong></p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>按下图顺序依次安装如下文件</strong></p>
+     <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡6.PNG" width="515" height="100"></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">在哪里下载？（https://meyerxray.github.io/）请进入X光产品线技术支持网站软件驱动中可以直接下载。</p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>安装方式：双击打开如下图“exe”</strong></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡7.PNG" width="495" height="100"></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>关闭服务</strong></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>打开“控制面板”—“管理工具”，找到“系统配置”后点击“启动”，取消勾选“Device Manager”，后点击“确定”。</strong></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/Dalsa采集卡8.PNG" width="495" height="314"></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>更新插件</strong></p>
+	 <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>此操作同32位操作系统</strong></p>
+</div>
+
+
+</body>
+</html>

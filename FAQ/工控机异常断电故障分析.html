@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>工控机异常断电故障分析</title>
+<style type="text/css">
+body
+{
+   background-color: #222222;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 24px;
+   margin: 0;
+   padding: 0;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #EEB13B;
+   text-decoration: none;
+}
+a:visited
+{
+   color: #EEB13B;
+}
+a:active
+{
+   color: #EEB13B;
+}
+a:hover
+{
+	color: #EEB13B;
+	font-family: "楷体";
+	font-size: 24px;
+	text-decoration: none;
+	border: 0px #000000 solid;
+	background-color: #666666;
+}
+</style>
+<style type="text/css">
+#Line1
+{
+   color: #036EB8;
+   background-color: #036EB8;
+   border-width: 0;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#wb_CssMenu1
+{
+   border: 0px #C0C0C0 solid;
+   background-color: transparent;
+}
+#wb_CssMenu1 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu1 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+   width: 100px;
+}
+#wb_CssMenu1 a
+{
+   display: block;
+   float: left;
+   color: #666666;
+   border: 1px #C0C0C0 solid;
+   background-color: #EEEEEE;
+   background-image: none;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   width: 88px;
+   height: 26px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 26px;
+   text-align: center;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover
+{
+   color: #666666;
+   background-color: #C0C0C0;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+}
+#wb_CssMenu1 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu1 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu1 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px solid #000000;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#Image4
+{
+   border: 0px #000000 solid;
+}
+.STYLE2 {
+	font-family: '楷体';
+	font-size: 24px;
+	color: #000000;
+}
+</style>
+</head>
+<body>
+<div class="STYLE2" id="wb_Text9" style="position:absolute;left:218px;top:32px;width:499px;height:39px;z-index:10;text-align:center;"><span style="color:#FFFFFF;font-family:'楷体';font-size:36px;">工控机异常断电故障分析</span></div>
+<div id="wb_Text3" style="position:absolute;left:11px;top:108px;width:1434px;height:1753px;z-index:5;text-align:left;">
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>情况一：软件界面上文字都变成“not found”如何解决？</strong></p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">解决方法：</p>
+  <p>&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">一、进入设置界面，选择“系统设置”，在左上角选择合适的语言包（注：若中文直接点击第一个按钮并点击保存）。</p>
+  <p>&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">二、检查各项参数是否被更改，重新调节各项参数。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>情况二：开机自检显示“采集卡打开失败”如何解决？</strong></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">解决方法：</p>
+  <p>&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">一、打开工控机外部罩壳，重新插拔内部的采集卡，并查看是哪种类型的采集卡，如下图：</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/01 epix卡拍摄实物图.jpg" width="740" height="514"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">图一：EPIX采集卡实物</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/02 dalsa卡拍摄实物图.jpg" width="740" height="514"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">图二：DALSA采集卡实物</p>
+  <p>&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">二、根据采集卡种类，在“设置”-“系统设置”界面中选择正确的采集卡，点击保存后重新启动软件</p>
+  <p>&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">三、若执行步骤1和2后问题依然存在，则需要卸载并重新安装采集卡驱动，步骤如下：</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">1、查看操作系统（32位还是64位）</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">2、卸载原有采集卡驱动，epix卡-在设备管理器中右键卸载，dalsa卡-在控制面板中卸载，如下图：</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/03 dalsa采集卡驱动卸载内容.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">3、若执行步骤1和2后问题依然存在，则重新安装采集卡驱动驱动</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（1）epix采集卡</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><a href="EPIX32位采集卡驱动安装步骤.html">32位操作系统安装步骤（点击链接查看）</a></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><a href="EPIX64位采集卡驱动安装步骤.html">64位操作系统安装步骤（点击链接查看）</a></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">（2）dalsa采集卡</p> 
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><a href="80XS2240KX采集卡驱动安装步骤.html">80XS2/240KX机型（点击链接查看）</a></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><a href="其他机型采集卡驱动安装步骤.html">其他机型（点击链接查看）</a></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>情况三：开机自检显示“PLC连接异常/OPC连接异常”如何解决？</strong></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">解决方法：</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">鼠标右键打开右下角网络图标，选择“打开网络和共享中心”，修改PLC连接的Ip地址，如下图：</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/04 设置PLC的IP地址.PNG"></p>
+    <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;"><strong>情况四：开机后图像分辨率错误如何解决？</strong></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">解决方法：</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/分辨率错误.PNG" width="307" height="334"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">如上图所示：分辨率出现了问题</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/监视器.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">先将图形选项——输出至——监视器。</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/分辨率.PNG"></p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">再调整分辨率为1280*1024，问题解决。</p>
+</div>
+</body>
+</html>

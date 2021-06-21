@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>伺服驱动器</title>
+<style type="text/css">
+body
+{
+	background-color: #222222;
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	border-top-color: #222222;
+	border-right-color: #222222;
+	border-bottom-color: #222222;
+	border-left-color: #222222;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a:visited
+{
+   color: #FFFFFF;
+}
+a:active
+{
+   color: #E6002D;
+}
+a:hover
+{
+	color: #FFFFFF;
+	font-family: "楷体";
+	font-size: 24px;
+	text-decoration: none;
+	border: 0px #000000 solid;
+	background-color: #666666;
+}
+</style>
+<style type="text/css">
+#Line1
+{
+   color: #036EB8;
+   background-color: #036EB8;
+   border-width: 0;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#wb_CssMenu1
+{
+   border: 0px #C0C0C0 solid;
+   background-color: transparent;
+}
+#wb_CssMenu1 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu1 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+   width: 100px;
+}
+#wb_CssMenu1 a
+{
+   display: block;
+   float: left;
+   color: #666666;
+   border: 1px #C0C0C0 solid;
+   background-color: #EEEEEE;
+   background-image: none;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   width: 88px;
+   height: 26px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 26px;
+   text-align: center;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover
+{
+   color: #666666;
+   background-color: #C0C0C0;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+}
+#wb_CssMenu1 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu1 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu1 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#Image4
+{
+   border: 0px #000000 solid;
+}
+.STYLE2 {
+	font-family: '楷体';
+	font-size: 24px;
+	color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+<div class="STYLE2" id="wb_Text9" style="position:absolute;left:262px;top:17px;width:478px;height:39px;z-index:10;text-align:center;"><span style="color:#FFFFFF;font-family:'楷体';font-size:36px;">台达伺服驱动器报警代码查询</span></div>
+<div id="wb_Text3" style="position:absolute;left:11px;top:108px;width:923px;height:487px;z-index:5;text-align:left;">
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><img src="images/taida.PNG" width="121" height="284">名称：台达伺服驱动器</p>
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;"><strong>运行时报警原因及报警内容</strong></p>
+  <table width="596" border="1">
+    <tr>
+      <td width="138">报警代码（运行时）</td>
+      <td width="153">报警名称</td>
+      <td width="283">报警内容</td>
+    </tr>
+    <tr>
+      <td>AL-001</td>
+      <td>过流</td>
+      <td>主回路电流值超越电机瞬间电流值1.5倍</td>
+    </tr>
+    <tr>
+      <td>AL-002</td>
+      <td>过压</td>
+      <td>主回路电压值高于规格值时动作</td>
+    </tr>
+    <tr>
+      <td>AL-003</td>
+      <td>欠压</td>
+      <td>主回路电压值低于规格值时动作</td>
+    </tr>
+    <tr>
+      <td>AL-004</td>
+      <td>电机匹配异常</td>
+      <td>驱动器所对应的电机不对</td>
+    </tr>
+    <tr>
+      <td>AL-005</td>
+      <td>回生异常</td>
+      <td>回生控制作动异常时动作</td>
+    </tr>
+    <tr>
+      <td>AL-006</td>
+      <td>过负载</td>
+      <td>电机及驱动器过负荷时动作</td>
+    </tr>
+    <tr>
+      <td>AL-007</td>
+      <td>过速度</td>
+      <td>电机控制速度超过正常速度</td>
+    </tr>
+    <tr>
+      <td>AL-008</td>
+      <td>异常脉冲控制指令</td>
+      <td>脉冲指令输入频率超过硬件介面允许值</td>
+    </tr>
+    <tr>
+      <td>AL-009</td>
+      <td>位置控制误差过大</td>
+      <td>位置控制误差量大于设定允许值</td>
+    </tr>
+    <tr>
+      <td>AL-010</td>
+      <td>保留</td>
+      <td>保留</td>
+    </tr>
+    <tr>
+      <td>AL-011</td>
+      <td>编码器异常</td>
+      <td>编码器产生脉冲信号异常</td>
+    </tr>
+    <tr>
+      <td>AL-012</td>
+      <td>校正异常</td>
+      <td>执行电气校正时超越允许值</td>
+    </tr>
+    <tr>
+      <td>AL-013</td>
+      <td>紧急停止</td>
+      <td>紧急按钮按下时</td>
+    </tr>
+    <tr>
+      <td>AL-014</td>
+      <td>反向极限异常</td>
+      <td>逆向极限开关被按下时</td>
+    </tr>
+    <tr>
+      <td>AL-015</td>
+      <td>正向极限异常</td>
+      <td>正向极限开关被按下时</td>
+    </tr>
+    <tr>
+      <td>AL-016</td>
+      <td>IGBT过热</td>
+      <td>IGBT温度过高</td>
+    </tr>
+    <tr>
+      <td>AL-017</td>
+      <td>参数储存器异常</td>
+      <td>存储器存取异常</td>
+    </tr>
+    <tr>
+      <td>AL-018</td>
+      <td>检出器输出异常</td>
+      <td>检出器输出高于额定输出频率</td>
+    </tr>
+    <tr>
+      <td>AL-019</td>
+      <td>串列通讯异常</td>
+      <td>RS-232/485通讯异常</td>
+    </tr>
+    <tr>
+      <td>AL-020</td>
+      <td>串列通讯超时</td>
+      <td>RS-232/485超时异常</td>
+    </tr>
+    <tr>
+      <td>AL-021</td>
+      <td>保留</td>
+      <td>保留</td>
+    </tr>
+    <tr>
+      <td>AL-022</td>
+      <td>主回路电源缺相</td>
+      <td>主回路电源缺相</td>
+    </tr>
+    <tr>
+      <td>AL-023</td>
+      <td>预先过负载警告</td>
+      <td>预先过负载警告</td>
+    </tr>
+    <tr>
+      <td>AL-024</td>
+      <td>编码器初始磁场错误</td>
+      <td>编码器磁场位置UVW错误</td>
+    </tr>
+    <tr>
+      <td>AL-025</td>
+      <td>编码器内部错误</td>
+      <td>编码器内部存储器异常</td>
+    </tr>
+    <tr>
+      <td>AL-026</td>
+      <td>编码器内部资料可靠度错误</td>
+      <td>内部资料连续三次异常</td>
+    </tr>
+    <tr>
+      <td>AL-030</td>
+      <td>电机碰撞错误</td>
+      <td>电机撞击硬件设备达到P1-57的扭矩</td>
+    </tr>
+    <tr>
+      <td>AL-031</td>
+      <td>电机U.V.W接线错误</td>
+      <td>电机Powerline U.V.W接线错误</td>
+    </tr>
+    <tr>
+      <td>AL-099</td>
+      <td>DSP软件升级</td>
+      <td>软件版本升级</td>
+    </tr>
+  </table>
+  <p style="color:#000000;font-family:'楷体';font-size:24px;"><br>
+  </p>
+</div>
+</body>
+</html>

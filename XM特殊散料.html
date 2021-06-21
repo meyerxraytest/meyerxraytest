@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>XM特殊散料机型</title>
+
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/vector.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<div id="output">
+		<div class="containerT">
+		<img src="images/logo.png">
+		<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+			<h1>XM特殊散料机型</h1>
+			<p style="color:#FFFFFF;font-family:'楷体';font-size:36px;">&nbsp;</p>
+			<form class="form" id="entry_form">
+				<input type="button"onClick="X1()"value="MY8045-XM_Inspect_V1.02.zip"/>
+				<p>说明：目前最新v1.02。<br>
+1、1.02版特殊散料上位机软件和系统底板均升级，<br>与原先不兼容；<br>
+2、使用该1.02版到老机器上将发生系统底板通信失败问题；<br>
+3、新版软件识别效果更好<br>（解决老版的珍珠料漏检问题），可视化调参；<br>
+</p>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        Victor("container", "output");   //登录背景函数
+        $("#entry_name").focus();
+        $(document).keydown(function(event){
+            if(event.keyCode==6){
+                $("#entry_btn").click();
+            }
+        });
+    });
+	function X1(){window.location.href="./0Software/MY8045-XM_Inspect_V1.02.zip";}
+</script>
+</body>
+</html>

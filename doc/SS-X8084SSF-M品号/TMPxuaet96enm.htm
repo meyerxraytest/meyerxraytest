@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<title>品号查询</title>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/front-endPage.js"></script>
+<script type="text/javascript" src="js/shujv2.js"></script>
+
+<link rel="stylesheet" title="对于“在浏览器中预览”为禁用: css/table.css" type="text/css">
+<style type="text/css">
+<!--
+
+body, h1, p, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+table, td {
+    border-collapse: collapse;
+    padding: 5px 0;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "楷体";
+	border: 0px solid #FFFFFF;
+	font-size: 18px;
+	background-color: #222222;
+	color: #FFFFFF;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+button {
+	outline: none;
+	font-size: 26px;
+}
+.CJJ-Table .clearfix {
+    clear: both;
+}
+
+.CJJ-Table .pagenumberBox {
+    float: left;
+}
+
+.CJJ-Table .pagenumberBox li {
+    float: left;
+    padding: 4px 9px 4px 9px;
+    border: 1px solid #d9d9d9;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #333;
+}
+
+.CJJ-Table .pagenumberBox li:hover {
+    background: #ff6666 !important;
+    padding: 5px 10px 5px 10px !important;
+    color: white !important;
+    border: none !important;
+}
+
+.CJJ-Table .pagenumberBoxLi {
+    background: #ff6666 !important;
+    padding: 5px 10px 5px 10px !important;
+    color: white !important;
+    border: none !important;
+}
+
+.CJJ-Table tfoot span {
+    padding: 4px 15px 4px 15px;
+    border: 1px solid #d9d9d9;
+    color: #FFFFFF;
+}
+
+.CJJ-Table tfoot span:hover {
+    background: #ff6666 !important;
+    padding: 5px 16px 5px 16px !important;
+    color: white !important;
+    border: none !important;
+}
+
+.CJJ-Table .tfootRight input {
+    width: 80px;
+    padding-left: 10px;
+    height: 25px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.CJJ-Table .tfootRight button {
+    width: 60px;
+    height: 25px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.CJJ-Table .tfootRight button:hover {
+    background: #ff6666 !important;
+    height: 27px;
+    color: white !important;
+    border: none !important;
+}
+.CJJ-Table {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.CJJ-Table thead{
+    border-bottom: 1px solid #ccc;
+    background: #f2f2f2;
+}
+
+.CJJ-Table thead th{
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.CJJ-Table tbody td{
+    text-align: center;
+}
+
+.CJJ-Table tbody tr{
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+.CJJ-Table tbody tr:hover{
+    background-color: #d5d5d5;
+}
+.CJJ-Table tfoot select{
+    width: 80px;
+    padding-left: 10px;
+    height: 26px;
+    border: 1px solid #d9d9d9;
+    color: #FFFFFF;
+}
+
+
+-->
+</style>
+
+</head>
+<body>
+
+<div id="histroyBox"></div>
+<script type="text/javascript">
+    $('#histroyBox').CJJTable({
+       'title':["序号","物料品号","名称","所属机型","备注"],
+       'body':["taskCode","startAddr","endAddr","varietiesTypeName","createDate"],
+       'display':[1,1,1,1,1,2],
+       'pageNUmber':100,
+       'pageLength':data.length,
+       'url':data,
+       dbTrclick:function(e){
+        alert(e.find('.taskCode').html())
+       }
+    });
+</script>
+<div style="text-align:center;">
+</div>
+</body>
+</html>

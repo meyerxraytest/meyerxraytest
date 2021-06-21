@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>如何在KEPServer中配置OPC</title>
+<style type="text/css">
+body
+{
+	background-color: #222222;
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background-position: center;
+}
+#wb_Text3 table {
+	text-align: center;
+	background-position: center;
+}
+</style>
+<style type="text/css">
+a
+{
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a:visited
+{
+   color: #FFFFFF;
+}
+a:active
+{
+   color: #E6002D;
+}
+a:hover
+{
+	color: #FFFFFF;
+	font-family: "楷体";
+	font-size: 24px;
+	text-decoration: none;
+	border: 0px #000000 solid;
+	background-color: #666666;
+}
+</style>
+<style type="text/css">
+#Line1
+{
+   color: #036EB8;
+   background-color: #036EB8;
+   border-width: 0;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+}
+#wb_CssMenu1
+{
+   border: 0px #C0C0C0 solid;
+   background-color: transparent;
+}
+#wb_CssMenu1 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu1 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+   width: 100px;
+}
+#wb_CssMenu1 a
+{
+   display: block;
+   float: left;
+   color: #666666;
+   border: 1px #C0C0C0 solid;
+   background-color: #EEEEEE;
+   background-image: none;
+   font-family: Arial;
+   font-size: 13px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   width: 88px;
+   height: 26px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 26px;
+   text-align: center;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover
+{
+   color: #666666;
+   background-color: #C0C0C0;
+   background-image: none;
+   border: 1px #C0C0C0 solid;
+}
+#wb_CssMenu1 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu1 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu1 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px solid #000000;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#Image4
+{
+   border: 0px #000000 solid;
+}
+.STYLE2 {
+	font-family: '楷体';
+	font-size: 24px;
+	color: #000000;
+}
+</style>
+</head>
+<body>
+<div class="STYLE2" id="wb_Text9" style="position:absolute;left:99px;top:35px;width:736px;height:39px;z-index:10;text-align:center;"><span style="color:#FFFFFF;font-family:'楷体';font-size:36px;"><span style="font-family:黑体">如何<span class="MsoTitle" style="text-align:justify;text-justify:inter-ideograph"><span
+style='font-family:宋体'>在</span><span lang=EN-US>KEPServer</span><span
+style='font-family:宋体'>中配置</span><span lang=EN-US>OPC</span></span></span></span></div>
+<div id="wb_Text3" style="position:absolute;left:11px;top:108px;width:923px;height:1219px;z-index:5;text-align:left;">
+
+  <p style="color:#FFFFFF;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:宋体'>步骤</span><span lang=EN-US>1</span><span
+style='font-family:宋体'>：打开</span><span lang=EN-US>KEPSever</span><span
+style='font-family:宋体'>进入界面如下，点击选择“<b>连接性</b>”，右键“<b>新建通道</b>”；随后在下拉选项中选择“</span><b><span
+lang=EN-US>Allen-Bradley Micro800 Ethernet</span></b><span style='font-family:
+宋体'>”，点击下一步。</span></p>
+  <p class=MsoNormal style='text-align:center;text-justify:inter-ideograph'><span
+lang=zh-CN><img
+src="在KEPServer中配置OPC.files/image001.jpg" alt="1" width=316 height=231 id="图片 1"></span><span lang=EN-US><img src="在KEPServer中配置OPC.files/image002.jpg" alt="2"
+width=297 height=229 id="图片 16"></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:宋体'>步骤</span><span lang=EN-US>2</span><span
+style='font-family:宋体'>：在“添加通道向导”界面上，通道名称务必填写为“</span><span lang=EN-US>PLC</span><span
+style='font-family:宋体'>”；下一步默认设置，无需更改。</span></p>
+  <p class=MsoNormal style='text-align:center;text-justify:inter-ideograph'><span
+lang=EN-US><img
+src="在KEPServer中配置OPC.files/image003.jpg" alt="3" width=273 height=221 id="图片 19">&nbsp;<img src="在KEPServer中配置OPC.files/image004.jpg" alt="4" width=274 height=227
+id="图片 22"></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:宋体'>步骤</span><span lang=EN-US>3</span><span
+style='font-family:宋体'>：到选择网络适配器时，在下拉框中选择连接</span><span lang=EN-US>PLC</span><span
+style='font-family:宋体'>控制器的网口，其该<b>网卡的</b></span><b><span lang=EN-US>IP</span></b><b><span
+style='font-family:宋体'>地址应当提前设置为“</span><span lang=EN-US>192.168.102.200/255.255.255.0</span></b><b><span
+style='font-family:宋体'>”</span></b><span style='font-family:宋体'>；确认后下一步默认，直至完成通道建立。。</span></p>
+  <p class=MsoNormal style='text-align:center;text-justify:inter-ideograph'><span
+lang=EN-US><img
+src="在KEPServer中配置OPC.files/image005.jpg" alt="5" width=256 height=248 id="图片 13889">&nbsp;<img src="在KEPServer中配置OPC.files/image006.jpg" alt="6" width=275 height=226
+id="图片 13901"></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:宋体'>步骤</span><span lang=EN-US>4</span><span
+style='font-family:宋体'>：通道建立完成后，“单击添加设备”，指定此<b>对象名称必须为“</b></span><b><span
+lang=EN-US>XM</span></b><b><span style='font-family:宋体'>”</span></b><span
+style='font-family:宋体'>。</span></p>
+  <p class=MsoNormal style='text-align:center;text-justify:inter-ideograph'><span
+lang=zh-CN><img src="在KEPServer中配置OPC.files/image007.jpg" alt="7" width=265 height=144>&nbsp;<img src="在KEPServer中配置OPC.files/image008.jpg" alt="8"
+width=213 height=139></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:宋体'>步骤</span><span lang=EN-US>5</span><span
+style='font-family:宋体'>：下一步指定</span><span lang=EN-US>PLC</span><span
+style='font-family:宋体'>的</span><span lang=EN-US>ID</span><span
+style='font-family:宋体'>，即</span><span lang=EN-US>IP</span><span
+style='font-family:宋体'>地址：</span><b><span lang=EN-US>192.168.102.100</span></b><span
+style='font-family:宋体'>；后续默认设置无需更改，直至添加设备完成。</span></p>
+  <p class=MsoNormal style='text-align:center;text-justify:inter-ideograph'><span
+lang=zh-CN><img src="在KEPServer中配置OPC.files/image009.jpg" alt="9" width=294 height=163><img src="在KEPServer中配置OPC.files/image010.jpg" alt="10"
+width=269 height=162></span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-family:宋体'>以上设置完成，工控机和</span><span lang=EN-US>PLC</span><span
+style='font-family:宋体'>已经完成建立连接。</span></p>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph;text-indent:24.0pt'>&nbsp;</p>
+  <p style="color:#EEB13B;font-family:'楷体';font-size:24px;">&nbsp;</p>
+  <p>&nbsp;</p>
+  <p style="color:#000000;font-family:'楷体';font-size:24px;">&nbsp;</p>
+</div>
+
+</body>
+</html>
